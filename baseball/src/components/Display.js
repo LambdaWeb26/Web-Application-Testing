@@ -2,18 +2,18 @@ import React, {useState} from 'react';
 
 
 
-const Display = (props) => {
+const Display = ({ball, strike}) => {
     
 
     return(
         <div>
             <div className="strike">
                 <h3 data-testid="strike">Strike</h3>
-                <div>number of strikes</div>
+                <div>{strike}</div>
             </div>
             <div className="ball">
                 <h3 data-testid="ball">Ball</h3>
-                <div>number of Balls</div>
+                <div>{ball}</div>
             </div>        
         </div>
     )
