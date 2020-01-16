@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import Display from "./Display"
 
 
-function Dashboard () {
-
+const Dashboard = () => {
+    const [strike, setStrike] = useState();
+    const [ball, setBall] = useState();
 
     return(
         <div>
-            <button>Strike</button>
-            <button>Ball</button>
-            <button>Foul</button>
-            <button>Hit</button>
-
+             <Display />
+            <div>
+                <button>Strike</button>
+                <button>Ball</button>
+                <button>Foul</button>
+                <button>Hit</button>
+            </div>
         </div>
     )
 }

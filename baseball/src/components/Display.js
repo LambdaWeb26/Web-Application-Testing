@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 
 
-function Display () {
-
+const Display = (props) => {
+    
 
     return(
         <div>
@@ -19,4 +19,4 @@ function Display () {
     )
 }
 
-export default Display
+export default Display;
