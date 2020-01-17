@@ -16,3 +16,9 @@ test('Strike header is found', () => {
   const { getByTestId } = render (<App />);
   getByTestId(/strike/i);
 })
+
+test('Out header is found', () => {
+  const { getByTestId } = render (<App />);
+  getByTestId(/out/i);
+})
+

@@ -24,3 +24,24 @@ export const foulClick = (strike) => {
     }
 }
 
+export const outClick = (out) => {
+    if (out < 3){
+        return out + 1
+    }else {
+        return 0
+    }
+}
+
+export const homeRunsClick = runs => {
+    return runs + 1
+}
+export const awayRunsClick = runs => {
+    return runs + 1
+}
+export const inningClick = inning => {
+    if (inning < 9){
+        return inning + 1
+    } else {
+        return 0
+    }
+}

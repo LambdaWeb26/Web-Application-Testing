@@ -1,4 +1,4 @@
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/react';
 import {ballClick, strikeClick, foulClick} from "./count";
 
 test('strike button adds 1 to the strike count', () => {
